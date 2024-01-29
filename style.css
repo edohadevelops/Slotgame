@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+@media(min-width: 901px){
+    html{
+        font-size: 7px;
+    }
+}
+@media(min-width: 1200px){
+    html{
+        font-size: 9px;
+    }
+}
+@media(min-width: 1400px){
+    html{
+        font-size: 11px;
+    }
+}
+@media(min-width: 1600px){
+    html{
+        font-size: 13px;
+    }
+}
+@media(min-width: 1800px){
+    html{
+        font-size: 15px;
+    }
+}
+@media(max-width: 900px){
+    html{
+        font-size: 5px;
+    }
+}
+@media(max-width: 750px){
+    html{
+        font-size: 5px;
+    }
+}
+@media(max-width: 500px){
+    html{
+        font-size: 3px;
+    }
+}
+@media(max-width: 350px){
+    html{
+        font-size: 2.7px;
+    }
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+#game-body{
+    width: 100vw;
+    background-color: rgb(5, 5, 44);
+    height: min(100vh,800px);
+    color: aliceblue;
+    padding: min(20rem, 80px) min(5rem,15px);
+    font-size: min(6rem,18px);
+}
+#game-body h1{
+    text-align: center;
+    font-size: min(12rem,40px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: min(5rem,15px);
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(2, 2, 14);
+    width: 100%;
+    padding: 0 min(5rem,30px);
+    font-size: min(6.5rem,22px);
+
+}
+#header p{
+    width: fit-content;
+}
+#Spin-title{
+    font-style: italic;
+}
+#slot{
+    width: min(100%,600px);
+    margin: 0 auto;
+    background-color: rgb(15, 15, 72);
+    padding: 0 0 min(20rem,60px);
+}
+.actual-balance{
+    color: greenyellow;
+    font-style: italic;
+}
+#game-box{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+
+}
+#game-box input{
+    display: block;
+    width: 100%;
+    height: min(15rem,55px);
+    border: none;
+    outline: none;
+    padding: min(3rem,10px);
+    background-color: rgb(2, 2, 14);
+    margin-bottom: min(10rem,30px);
+    color: aliceblue;
+    text-align: center;
+}
+#game-box button{
+    height: min(15rem,55px);
+    width: min(40rem,160px);
+    border: none;
+    outline: none;
+    padding: min(3rem,10px);
+    background-color: rgb(2, 2, 14);
+    color: aliceblue;
+    margin: min(10rem,30px) 30% min(5rem,15px);
+
+}
+#step-1{
+    z-index: 2;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px);
+    transition: transform 1s;
+
+}
+#step-2{
+    width: 100%;
+    height: min(100rem,300px);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px);
+}
+.step2,.step3,.step4,.step5,.step6,.step7,.step8,.step9{
+    transform: scale(0.01);
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+    transform: scale(1);
+}
+.hide{
+    transform: scale(0.1);
+    visibility: none;
+}
+#step-2 h3,#step-4 h3,#step-7 h3,#step-9 h3{
+    margin-bottom: 0;
+    line-height: min(10rem,30px);
+}
+#step-3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px);
+}
+#step-4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px);
+}
+#step-5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px);
+}
+#step-6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px);
+}
+#step-7{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px) min(5rem,30px) 0;
+
+}
+#step-8{
+    display: grid;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px) min(5rem,30px) 0;
+
+
+}
+#results{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    font-size: min(12rem,40px);
+    gap: min(5rem,15px);
+    margin-bottom: min(5rem,15px);
+    border: solid rgb(2, 2, 14) min(3rem,10px);
+}
+.lines{
+    border-right: solid rgb(2, 2, 14) min(3rem,10px);
+    padding-right: min(3rem,10px);
+}
+.border{
+    border-left: solid rgb(2, 2, 14) min(3rem,10px);
+    padding-left: min(3rem,10px); 
+}
+#results p{
+    margin: min(5rem,15px) 0;
+    width: min(20rem,60px);
+    text-align: center;
+}
+#step-9{
+    text-align: center;
+    width: 100%;
+    height:135%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(15, 15, 72);
+    padding: min(5rem,30px) min(5rem,30px) 0;
+}
+.dollar{
+    color: greenyellow;
+}
+.users-name{
+    color: orange;
+}
+
