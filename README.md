@@ -1,0 +1,2 @@
+# Slotgame
+Javascript slot game
